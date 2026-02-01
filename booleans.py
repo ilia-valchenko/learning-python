@@ -1,7 +1,7 @@
 bool(1) # True
 bool(0) # False
 bool(0.0) # False
-bool(-1) # True
+bool(-1) # True. NOTE: The boolean of any integer other than 0 will be "True."
 bool(1j) # True
 bool(0j) # False
 bool('True') # True
