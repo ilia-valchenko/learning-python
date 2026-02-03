@@ -45,3 +45,20 @@ print('11 example:', myList) # 1, 2, 3, 4
 
 myList.remove(2)
 print('12 example:', myList) # 1, 3, 4
+
+# pop() removes the last item from a list and returns it
+print('13 example:', myList.pop()) # 4
+print('14 example:', myList) # 1, 3
+
+print('15 example: Use pop() in a while loop')
+while len(myList):
+    print(myList.pop()) # Will print 3, 1. The list will be empty after executing the loop
+
+# Copy list. Creates an identical copy of a list which will be stored separately in a memory
+originalList = [1, 2, 3, 4, 5]
+copyList = originalList.copy()
+
+copyList.append(777) # It will not affect the original list
+
+print('16 example: Print original list.', originalList)
+print('17 example: Print copy list.', copyList)
