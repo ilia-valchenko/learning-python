@@ -28,3 +28,20 @@ print(listOfIntegers)
 # Use negative numbers as parameters
 print('7 example:', listOfIntegers[-2:]) # 98, 99
 print('8 example:', listOfIntegers[:-2]) # 0, 1, 2, ... 96, 97
+
+# Modifying lists
+listOfIntegers = [1, 2, 3, 4, 5, 7, 8, 9, 10, 11]
+listOfIntegers.append(777) # Adds a new value to the end of the list
+print('9 example:', listOfIntegers)
+
+# Insert a new item in a specific position
+myList = [1, 2, 3, 4]
+myList.insert(2, 'new value')
+print('10 example:', myList) # 1, 2, 'new value', 3, 4
+
+# Remove by value
+myList.remove('new value')
+print('11 example:', myList) # 1, 2, 3, 4
+
+myList.remove(2)
+print('12 example:', myList) # 1, 3, 4
