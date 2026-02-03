@@ -24,3 +24,7 @@ listOfIntegers = list(range(100))
 
 print('6 example: Print range values which we put in the list')
 print(listOfIntegers)
+
+# Use negative numbers as parameters
+print('7 example:', listOfIntegers[-2:]) # 98, 99
+print('8 example:', listOfIntegers[:-2]) # 0, 1, 2, ... 96, 97
