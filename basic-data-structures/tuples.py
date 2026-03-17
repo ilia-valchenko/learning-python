@@ -15,6 +15,14 @@ secondItem = simpleTuple[1] # 'Apple'
 # - They often used by default
 
 def returnMultipleValues():
-    return 1, 2, 3 # BTW We can return tuple explicitly: return (1, 2, 3)
+    return 1, 2, 3, 'Banana' # BTW We can return tuple explicitly: return (1, 2, 3)
 
 print(type(returnMultipleValues())) # <class 'tuple'>
+
+# Short syntax
+simpleTuple = 1, 2, 3, 'Apple' # BUT We usually ask developers to use parentheses (1, 2, 3, 'Apple') to avoid confusion
+
+# Assign tuple result to multiple variable
+firstNumber, secondNumber, thirdNumber, fruit = returnMultipleValues()
+
+print(f'FirstNumber: {firstNumber}; SecondNumber: {secondNumber}; ThirdNumber: {thirdNumber}; Fruit: {fruit}')
