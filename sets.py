@@ -15,3 +15,23 @@ listWithUniqueItems = list(set(listWithDuplicates)) # [1000, 'c', 'b', 'a']
 # NOTE: We can't use slice syntax here. The code below will not work.
 # TypeError: 'set' object is not subscriptable
 # mySet[0]
+
+# Add elements to a set
+# It's not the 'append' function we have for lists. Append adds a new item in the end of the list.
+# In our case we just tossing it on the pile.
+mySet = set(listWithDuplicates)
+mySet.add('Cake')
+
+# Check whether an item in a set or not
+doesSetContainSpecificItem = 'Cake' in mySet
+
+# Get the length of a set
+lengthOfMySet = len(mySet)
+
+# Pop an element of a set
+while len(mySet):
+    print(mySet.pop())
+    
+# 'discard' function removes a specified element from a set if it is present
+mySet = {'a', 'b', 'c'}
+mySet.discard('a')
