@@ -23,6 +23,7 @@ print(type(returnMultipleValues())) # <class 'tuple'>
 simpleTuple = 1, 2, 3, 'Apple' # BUT We usually ask developers to use parentheses (1, 2, 3, 'Apple') to avoid confusion
 
 # Assign tuple result to multiple variable
+# We call them unpacking values
 firstNumber, secondNumber, thirdNumber, fruit = returnMultipleValues()
 
 print(f'FirstNumber: {firstNumber}; SecondNumber: {secondNumber}; ThirdNumber: {thirdNumber}; Fruit: {fruit}')
