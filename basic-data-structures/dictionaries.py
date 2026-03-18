@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 animalsDictionary = {
     'a': 'aardvark',
     'b': 'bear',
@@ -19,3 +21,32 @@ values = animalsDictionary.values() # NOTE: It's an immutable dict_values object
 
 # But we can do the following
 simpleList = list(animalsDictionary.keys())
+
+# Get value from the dictionary by using fake key
+# item = animalsDictionary['fakeKey'] # KeyError: 'fakeKey'
+
+# We have an alternative function for retrieving values from a dictionary
+# Note: The second argument is a default value
+item2 = animalsDictionary.get('fakeKey') # None
+item3 = animalsDictionary.get('fakeKey', 'defaultAnimal') # defaultAnimal
+
+# Length of a dictionary
+numberOfItems = len(animalsDictionary)
+
+# Dictionary of lists
+complexDictionaryOfAnimals = {
+    'a': ['aardvark', 'antelope'],
+    'b': ['bear']
+}
+
+complexDictionaryOfAnimals['b'].append('bison')
+complexDictionaryOfAnimals['c'] = ['cat'] # The item with 'c' key doesn't exist. That's why we need to set a list.
+
+# Check a key for an existence
+if 'c' not in complexDictionaryOfAnimals:
+    complexDictionaryOfAnimals['c'] = []
+
+complexDictionaryOfAnimals['c'].append('cat')
+
+# Start using defaultdict from collections
+animals = defaultdict(list)
