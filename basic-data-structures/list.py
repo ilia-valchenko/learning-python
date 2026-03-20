@@ -69,6 +69,12 @@ print('17 example: Print copy list.', copyList)
 # Think of them as a "compact for loop" that builds a list in just one line of code.
 
 dummyList = [1, 2, 3, 4, 5]
-resultList = [2 * item for item in dummyList]
+resultList = [2 * item for item in dummyList] # Returns a copy of the list iteration over original list
 
 print(resultList) # [2, 4, 6, 8, 10]
+
+# List comprehensions with filters
+dummyList = list(range(100))
+print(dummyList) # [0, 1, ..., 99]
+filteredList = [item for item in dummyList if item % 2 == 0]
+print(filteredList) # [0, 2, 4, 6, ..., 96, 98]
