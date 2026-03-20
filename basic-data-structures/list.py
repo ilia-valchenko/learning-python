@@ -62,3 +62,13 @@ copyList.append(777) # It will not affect the original list
 
 print('16 example: Print original list.', originalList)
 print('17 example: Print copy list.', copyList)
+
+# ----------- List Comprehensions (understanding, awareness) -----------
+
+# NOTE: List comprehensions are a shortcut way to create new lists in Python.
+# Think of them as a "compact for loop" that builds a list in just one line of code.
+
+dummyList = [1, 2, 3, 4, 5]
+resultList = [2 * item for item in dummyList]
+
+print(resultList) # [2, 4, 6, 8, 10]
