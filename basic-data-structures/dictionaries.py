@@ -50,3 +50,19 @@ complexDictionaryOfAnimals['c'].append('cat')
 
 # Start using defaultdict from collections
 animals = defaultdict(list)
+
+print (animals) # It does not have any values. See: defaultdict(<class 'list'>, {})
+
+# Let's add some values
+animals['e'].append('elephant')
+
+print(animals) # defaultdict(<class 'list'>, {'e': ['elephant']})
+
+# Let's add a new value with same key
+animals['e'].append('emu')
+
+print(animals) # defaultdict(<class 'list'>, {'e': ['elephant', 'emu']})
+
+# In this case we will get an empty list because we haven't added anything yet.
+print(animals['f']) # []
+
